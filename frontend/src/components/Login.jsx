@@ -36,7 +36,6 @@ export default function Login() {
   
       const data = await response.json();
       console.log("Login successful:", data);
-      setOpenAlert(true);
       alert("success")
       setTimeout(() => navigate("/main"), 2000); // Redirect after 2 seconds
     } catch (error) {
